@@ -2,72 +2,90 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8">
-<title>Rafinat Second Hand</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafinat SH</title>
 
 <style>
-body{font-family:Arial;margin:0;background:#fafafa;color:#333}
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#0e2d4f;
+    color:white;
+}
 
-/* HEADER */
+/* Header */
 header{
-  background:#7b2cbf;
-  color:white;
-  text-align:center;
-  padding:40px 20px;
+    text-align:center;
+    padding:30px 10px;
+    background:linear-gradient(135deg,#0e2d4f,#1f4f87);
 }
 
-/* MENIU */
+header h1{
+    margin:0;
+    font-size:34px;
+    letter-spacing:1px;
+}
+
 nav{
-  background:#f1f1f1;
-  padding:10px;
-  text-align:center;
+    margin-top:15px;
 }
+
 nav a{
-  margin:0 15px;
-  text-decoration:none;
-  color:#7b2cbf;
-  font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:16px;
+    font-weight:bold;
 }
 
-/* CONȚINUT */
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
+nav a:hover{
+    text-decoration:underline;
 }
 
-/* PRODUSE */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
-  gap:20px;
-}
-.card{
-  background:white;
-  border-radius:10px;
-  padding:15px;
-  box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-.card img{
-  width:100%;
-  border-radius:10px;
-}
-.btn{
-  background:#e63946;
-  color:white;
-  border:none;
-  padding:8px 12px;
-  border-radius:6px;
-  cursor:pointer;
-  margin-top:10px;
+/* Secțiuni */
+section{
+    padding:25px;
+    max-width:1100px;
+    margin:auto;
 }
 
-/* FOOTER */
+/* Titluri secțiuni */
+.section-title{
+    font-size:24px;
+    border-bottom:2px solid white;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+/* Galerie */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:12px;
+    margin-top:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    border:2px solid white;
+}
+
+/* Carduri categorii */
+.category{
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+/* Footer */
 footer{
-  text-align:center;
-  padding:20px;
-  margin-top:30px;
-  background:#f1f1f1;
+    text-align:center;
+    padding:20px;
+    background:#0b203a;
+    margin-top:30px;
+    font-size:14px;
 }
 </style>
 </head>
@@ -75,63 +93,70 @@ footer{
 <body>
 
 <header>
-  <h1>Rafinat Second Hand</h1>
-  <p>Haine frumoase la prețuri mici</p>
+    <h1>Rafinat Second Hand</h1>
+    <nav>
+        <a href="#barbati">Bărbați</a>
+        <a href="#dama">Damă</a>
+        <a href="#copii">Copii</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-  <a href="#produse">Produse</a>
-  <a href="#despre">Despre noi</a>
-  <a href="#contact">Contact</a>
-</nav>
+<section id="intro">
+    <h2 class="section-title">Bun venit!</h2>
+    <p>Rafinat SH — haine atent selecționate pentru <strong>bărbați, damă și copii</strong>. 
+    Calitate la prețuri accesibile, stil pentru toate vârstele.</p>
+</section>
 
-<div class="container">
+<section id="barbati">
+    <h2 class="section-title">Categorie — Bărbați</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x300?text=Barbati+1">
+        <img src="https://via.placeholder.com/300x300?text=Barbati+2">
+        <img src="https://via.placeholder.com/300x300?text=Barbati+3">
+    </div>
+</section>
 
-  <h2 id="produse">Produse</h2>
+<section id="dama">
+    <h2 class="section-title">Categorie — Damă</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x300?text=Dama+1">
+        <img src="https://via.placeholder.com/300x300?text=Dama+2">
+        <img src="https://via.placeholder.com/300x300?text=Dama+3">
+    </div>
+</section>
 
-  <div class="grid" id="lista-produse"></div>
+<section id="copii">
+    <h2 class="section-title">Categorie — Copii</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x300?text=Copii+1">
+        <img src="https://via.placeholder.com/300x300?text=Copii+2">
+        <img src="https://via.placeholder.com/300x300?text=Copii+3">
+    </div>
+</section>
 
-  <h2 id="despre">Despre noi</h2>
-  <p>
-    La Rafinat Second Hand găsești haine atent selectate,
-    în stare foarte bună, la prețuri accesibile.
-  </p>
+<section id="galerie">
+    <h2 class="section-title">Galerie Generală</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x300?text=Produs+1">
+        <img src="https://via.placeholder.com/300x300?text=Produs+2">
+        <img src="https://via.placeholder.com/300x300?text=Produs+3">
+        <img src="https://via.placeholder.com/300x300?text=Produs+4">
+        <img src="https://via.placeholder.com/300x300?text=Produs+5">
+    </div>
+</section>
 
-  <h2 id="contact">Contact</h2>
-  <p>Ne poți scrie direct pe WhatsApp:</p>
-  <a class="btn" href="https://wa.me/40700000000">Scrie-ne pe WhatsApp</a>
-
-</div>
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>📍 Locație: …</p>
+    <p>📞 Telefon: …</p>
+    <p>📩 Email: …</p>
+</section>
 
 <footer>
-  © 2026 — Rafinat Second Hand
+    © 2026 Rafinat SH — Toate drepturile rezervate
 </footer>
-
-<script>
-const produse = [
- {nume:"Geacă denim", pret:80, img:"https://via.placeholder.com/300"},
- {nume:"Rochie roșie", pret:95, img:"https://via.placeholder.com/300"},
- {nume:"Hanorac", pret:70, img:"https://via.placeholder.com/300"},
- {nume:"Pantaloni Zara", pret:65, img:"https://via.placeholder.com/300"}
-];
-
-const lista = document.getElementById("lista-produse");
-
-produse.forEach(p=>{
-  const c=document.createElement("div");
-  c.className="card";
-  c.innerHTML = `
-    <img src="${p.img}">
-    <h3>${p.nume}</h3>
-    <p>${p.pret} RON</p>
-    <button class="btn">Rezervă pe WhatsApp</button>
-  `;
-  c.querySelector("button").onclick = ()=>{
-     window.location.href = "https://wa.me/40700000000?text=Bună! Vreau "+p.nume;
-  };
-  lista.appendChild(c);
-});
-</script>
 
 </body>
 </html>
