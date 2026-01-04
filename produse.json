@@ -1,0 +1,32 @@
+[
+  {
+    "nume":"Geacă denim",
+    "pret":80,
+    "categorie":"barbati",
+    "img":"https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg"
+  },
+  {
+    "nume":"Hanorac",
+    "pret":70,
+    "categorie":"barbati",
+    "img":"https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg"
+  },
+  {
+    "nume":"Rochie roșie",
+    "pret":95,
+    "categorie":"dama",
+    "img":"https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg"
+  },
+  {
+    "nume":"Palton",
+    "pret":120,
+    "categorie":"dama",
+    "img":"https://images.pexels.com/photos/1376812/pexels-photo-1376812.jpeg"
+  },
+  {
+    "nume":"Bluză copii",
+    "pret":50,
+    "categorie":"copii",
+    "img":"https://images.pexels.com/photos/3662840/pexels-photo-3662840.jpeg"
+  }
+]
