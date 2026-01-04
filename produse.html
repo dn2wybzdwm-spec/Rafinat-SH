@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Produse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Produse</h1>
+</header>
+
+<nav>
+  <a href="index.html">Acasă</a>
+  <a href="produse.html">Produse</a>
+</nav>
+
+<div class="container">
+
+<div class="filters">
+  <label>Categorie:</label>
+  <select id="cat">
+    <option value="toate">Toate</option>
+    <option value="barbati">Bărbați</option>
+    <option value="dama">Damă</option>
+    <option value="copii">Copii</option>
+  </select>
+
+  <label>Preț maxim:</label>
+  <input type="number" id="max" placeholder="ex: 100">
+</div>
+
+<div class="grid" id="lista"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
