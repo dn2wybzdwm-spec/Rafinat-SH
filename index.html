@@ -2,161 +2,131 @@
 <html lang="ro">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rafinat SH</title>
+<title>Rafinat Second Hand</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#0e2d4f;
-    color:white;
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
 }
 
-/* Header */
+/* HEADER */
 header{
-    text-align:center;
-    padding:30px 10px;
-    background:linear-gradient(135deg,#0e2d4f,#1f4f87);
-}
-
-header h1{
-    margin:0;
-    font-size:34px;
-    letter-spacing:1px;
+background:#7b2cbf;
+color:white;
+text-align:center;
+padding:40px 20px;
 }
 
 nav{
-    margin-top:15px;
+background:#f1f1f1;
+padding:10px;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-size:16px;
-    font-weight:bold;
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
 }
 
-nav a:hover{
-    text-decoration:underline;
+/* CONTAINER */
+.section{
+padding:20px;
+max-width:1100px;
+margin:auto;
 }
 
-/* Secțiuni */
-section{
-    padding:25px;
-    max-width:1100px;
-    margin:auto;
+/* CARD PRODUS */
+.card{
+background:white;
+padding:15px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
 }
 
-/* Titluri secțiuni */
-.section-title{
-    font-size:24px;
-    border-bottom:2px solid white;
-    display:inline-block;
-    margin-bottom:15px;
+.card img{
+width:100%;
+border-radius:10px;
 }
 
-/* Galerie */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-    gap:12px;
-    margin-top:15px;
+.btn{
+background:#ff4d5a;
+color:white;
+padding:10px 15px;
+border-radius:8px;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
 }
 
-.gallery img{
-    width:100%;
-    border-radius:10px;
-    border:2px solid white;
+h2{
+color:#333;
 }
 
-/* Carduri categorii */
-.category{
-    background:rgba(255,255,255,0.1);
-    padding:15px;
-    border-radius:10px;
-    margin-top:15px;
-}
-
-/* Footer */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#0b203a;
-    margin-top:30px;
-    font-size:14px;
-}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Rafinat Second Hand</h1>
-    <nav>
-        <a href="#barbati">Bărbați</a>
-        <a href="#dama">Damă</a>
-        <a href="#copii">Copii</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h1>Rafinat Second Hand</h1>
+<p>Haine frumoase la prețuri mici</p>
 </header>
 
-<section id="intro">
-    <h2 class="section-title">Bun venit!</h2>
-    <p>Rafinat SH — haine atent selecționate pentru <strong>bărbați, damă și copii</strong>. 
-    Calitate la prețuri accesibile, stil pentru toate vârstele.</p>
-</section>
+<nav>
+<a href="#barbati">Bărbați</a>
+<a href="#dama">Damă</a>
+<a href="#copii">Copii</a>
+</nav>
 
-<section id="barbati">
-    <h2 class="section-title">Categorie — Bărbați</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300x300?text=Barbati+1">
-        <img src="https://via.placeholder.com/300x300?text=Barbati+2">
-        <img src="https://via.placeholder.com/300x300?text=Barbati+3">
-    </div>
-</section>
 
-<section id="dama">
-    <h2 class="section-title">Categorie — Damă</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300x300?text=Dama+1">
-        <img src="https://via.placeholder.com/300x300?text=Dama+2">
-        <img src="https://via.placeholder.com/300x300?text=Dama+3">
-    </div>
-</section>
+<!-- BARBATI -->
+<div class="section" id="barbati">
+<h2>Bărbați</h2>
 
-<section id="copii">
-    <h2 class="section-title">Categorie — Copii</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300x300?text=Copii+1">
-        <img src="https://via.placeholder.com/300x300?text=Copii+2">
-        <img src="https://via.placeholder.com/300x300?text=Copii+3">
-    </div>
-</section>
+<div class="card">
+<img src="LINK_POZA_AICI">
+<h3>Geacă Denim</h3>
+<p>80 RON</p>
+<a class="btn" href="https://wa.me/40NUMARUL_TAU?text=Vreau%20geaca%20denim">Rezervă pe WhatsApp</a>
+</div>
 
-<section id="galerie">
-    <h2 class="section-title">Galerie Generală</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300x300?text=Produs+1">
-        <img src="https://via.placeholder.com/300x300?text=Produs+2">
-        <img src="https://via.placeholder.com/300x300?text=Produs+3">
-        <img src="https://via.placeholder.com/300x300?text=Produs+4">
-        <img src="https://via.placeholder.com/300x300?text=Produs+5">
-    </div>
-</section>
+</div>
 
-<section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>📍 Locație: …</p>
-    <p>📞 Telefon: …</p>
-    <p>📩 Email: …</p>
-</section>
 
-<footer>
-    © 2026 Rafinat SH — Toate drepturile rezervate
-</footer>
+<!-- DAMA -->
+<div class="section" id="dama">
+<h2>Damă</h2>
+
+<div class="card">
+<img src="LINK_POZA_AICI">
+<h3>Rochie Elegantă</h3>
+<p>60 RON</p>
+<a class="btn" href="https://wa.me/40NUMARUL_TAU?text=Vreau%20rochia%20eleganta">Rezervă pe WhatsApp</a>
+</div>
+
+</div>
+
+
+<!-- COPII -->
+<div class="section" id="copii">
+<h2>Copii</h2>
+
+<div class="card">
+<img src="LINK_POZA_AICI">
+<h3>Hanorac copii</h3>
+<p>40 RON</p>
+<a class="btn" href="https://wa.me/40NUMARUL_TAU?text=Vreau%20hanoracul%20de%20copii">Rezervă pe WhatsApp</a>
+</div>
+
+</div>
+
 
 </body>
 </html>
